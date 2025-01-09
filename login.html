@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Glamify</title>
+  <link rel="stylesheet" href="login_styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Glamify</div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="login-container">
+      <h2>Welcome Back!</h2>
+      <p>Login to access your account</p>
+      <form class="login-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button id="btn" class="btn">Login</button>
+        <p class="register-link">Don't have an account? <a href="register.html">Register Here</a></p>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-info">
+        <p>&copy; 2024 Glamify. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+  import { getAuth,  signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-auth.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyDb5_4A7hBcNmglzAfdTXsSk2UTsXuYEKc",
+    authDomain: "glamify-fab2c.firebaseapp.com",
+    projectId: "glamify-fab2c",
+    storageBucket: "glamify-fab2c.appspot.com",
+    messagingSenderId: "438273740662",
+    appId: "1:438273740662:web:5608e2dcd0cca846b27457"
+  };
+  const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        const loginEmail = document.getElementById('email');
+        const loginPassword = document.getElementById('password');
+        const loginBtn = document.getElementById('btn');
+        loginBtn.addEventListener('click', (event) => {
+          event.preventDefault(); // Prevent form submission
+          const email = loginEmail.value;
+          const password = loginPassword.value;
+        
+          signInWithEmailAndPassword(auth, email, password)
+            .then(userCredential => {
+              window.location.href="index.html"
+            })
+            .catch(error => {
+              alert(`Error: ${error.message}`);
+            });
+        });
+      </script>        
+</body>
+</html>

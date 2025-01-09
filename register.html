@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Glamify</title>
+  <link rel="stylesheet" href="register_styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Glamify</div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="register-container">
+      <h2>Create Your Account</h2>
+      <p>Join us to explore our exclusive collections</p>
+      <form class="register-form">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+        </div>
+        <button id="btn" class="btn">Register</button>
+        <p class="login-link">Already have an account? <a href="login.html">Login Here</a></p>
+      </form>
+    </div>
+  </main>
+  <footer>
+    
+  </footer>
+  <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+  
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDb5_4A7hBcNmglzAfdTXsSk2UTsXuYEKc",
+    authDomain: "glamify-fab2c.firebaseapp.com",
+    projectId: "glamify-fab2c",
+    storageBucket: "glamify-fab2c.appspot.com",
+    messagingSenderId: "438273740662",
+    appId: "1:438273740662:web:5608e2dcd0cca846b27457"
+  };
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  
+  const signupEmail = document.getElementById('email');
+  const signupPassword = document.getElementById('password'); // Use a consistent ID
+  const signupBtn = document.getElementById('btn');
+  
+  // Fixing the event listener to use the correct variable
+  signupBtn.addEventListener('click', () => {
+      const email = signupEmail.value;
+      const password = signupPassword.value;
+  
+      createUserWithEmailAndPassword(auth, email, password)
+          .then(userCredential => {
+              alert(`Account created for ${userCredential.user.email}`);
+          })
+          .catch(error => {
+              alert(`Error: ${error.message}`);
+          });
+  });
+  
+
+</script>
+</body>
+
+</html>

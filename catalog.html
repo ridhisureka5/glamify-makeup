@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Catalog</title>
+    <link rel="stylesheet" href="styles_for_catalog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+         
+          <nav>
+            <div class="logo">Glamify</div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#products">Products</a></li>
+              <li><a href="index.html#About">About Us</a></li>
+              <li><a href="index.html#contacts">Contact</a></li>
+              <li><a href="login.html" id="wishlist-icon">Login </a></li>
+              <li><a href="wishlist.html" id="wishlist-icon">Wishlist <span id="wishlist-count">(0)</span></a></li>
+             
+             
+            </ul>
+          </nav>
+        </header>
+          <main>
+            <div section class="products" id="products">
+              <div class="container">
+                <h3>LIPSTICK RANGE</h3>
+                <div class="product-grid">
+            <div class="product-card">
+              <img src="lip2.avif" alt="lipstick">
+              <h3>Loreal Matte Lipstick</h3>
+              <p>₹699</p>
+              <button class="btn wishlist-btn" onclick="addToWishlist('Loreal Matte Lipstick', 699, 'lipstick.avif')">Add to Wishlist</button>
+              <a href="https://www.nykaa.com/l-oreal-paris-infallible-matte-resistance-liquid-lipstick/p/13168494?productId=13168494&pps=8&skuId=12769234" target="_blank" class="btn">Buy Now</a>
+              </div>
+              <div class="product-card">
+                <img src="lip3.avif" alt="Lipstick">
+                <h3>Estee Laucer lipstick</h3>
+                <p>₹5400</p>
+                <button class="btn wishlist-btn" onclick="addToWishlist('Estee Lauder Lipstick', 5400, 'lip3.avif')">Add to Wishlist</button>
+                <a href="https://www.nykaa.com/estee-lauder-x-sabyasachi-limited-edition-lipstick-collection/p/12002663?productId=12002663&pps=2&skuId=12002659"target="_blank" class="btn">Buy Now</a>
+              </div>
+                <div class="product-card">
+                  <img src="lip4.avif" alt="Lipstick">
+                  <h3>Praush Lipstick</h3>
+                  <p>₹618</p>
+                  <button class="btn wishlist-btn" onclick="addToWishlist('Praush Lipstick', 618, 'lip3.avif')">Add to Wishlist</button>
+                  <a href="https://www.nykaa.com/praush-formerly-plume-plush-matte-lipstick/p/8963415?productId=8963415&pps=1&skuId=8963361" target="_blank" class="btn">Buy Now</a>
+                  </div>
+                  <div class="product-card">
+                    <img src="lip5.avif" alt="lipstick">
+                    <h3>Yves Saint Lipstick</h3>
+                    <p>₹4000</p>
+                    <button class="btn wishlist-btn" onclick="addToWishlist('Yves SaintLipstick', 4000, 'lip3.avif')">Add to Wishlist</button>
+                    <a href="https://www.nykaa.com/yves-saint-laurent-rouge-pur-couture-lipstick/p/16175557?productId=16175557&pps=1" target="_blank" class="btn">Buy Now</a>
+                    </div>
+                    </div>
+                    <br>
+                    
+                    <div section class="products" id="products">
+                      <div class="container">
+                        <h3>FOUNDATION RANGE</h3>
+                        <div class="product-grid">
+                  
+                    <div class="product-card">
+                      <img src="foun1.avif" alt="foundation">
+                      <h3>M.A.C Studio Foundation</h3>
+                      <p>₹4000</p>
+                      <button class="btn wishlist-btn" onclick="addToWishlist('M.A.C Studio Foundation', 4000, 'lip3.avif')">Add to Wishlist</button>
+                      <a href="https://www.nykaa.com/m-a-cstudio-fix-fluid-spf-15-foundation/p/14327558?productId=14327558&pps=8&skuId=14327504" target="_blank" class="btn">Buy Now</a>
+                      </div>
+                      <div class="product-card">
+                        <img src="foun2.avif" alt="foundation">
+                        <h3>Kay Beauty Foundation</h3>
+                        <p>₹1039</p>
+                        <button class="btn wishlist-btn" onclick="addToWishlist('kay Beauty Foundation', 1039, 'lip3.avif')">Add to Wishlist</button>
+                        
+                        <a href="https://www.nykaa.com/kay-beauty-hydrating-foundation/p/1229442?productId=1229442&pps=1&skuId=772973"target="_blank" class="btn">Buy Now</a>
+                      </div>
+                        <div class="product-card">
+                          <img src="foun3.avif" alt="foundation">
+                          <h3>Charmacy Milano Foundation</h3>
+                          <p>₹9340</p>
+                          <button class="btn wishlist-btn" onclick="addToWishlist('Charmacy Milano Foundation', 9340, 'lip3.avif')">Add to Wishlist</button>
+                          <a href="https://www.nykaa.com/charmacy-milano-matte-foundation/p/7678711?productId=7678711&pps=1&skuId=7678706"target="_blank" class="btn">Buy Now</a>
+                          </div>
+                          </div>
+                          <div section class="products" id="products">
+                            <div class="container">
+                              <h3>PERFUMES RANGE</h3>
+                              <div class="product-grid">
+                          <div class="product-card">
+                            <img src="perfume 1.avif" alt="perfume">
+                            <h3>Burberry Perfume</h3>
+                            <p>₹6200</p>
+                            <button class="btn wishlist-btn" onclick="addToWishlist('Burberry Perfume', 6200, 'lip3.avif')">Add to Wishlist</button>
+                            <a href="https://www.nykaa.com/burberry-goddess-eau-de-parfum/p/12011633?productId=12011633&pps=19&skuId=12011630"target="_blank" class="btn">Buy Now</a>
+                            </div>
+                            
+                          <div class="product-card">
+                              <img src="perfume 2.avif" alt="perfume">
+                              <h3>Lancome Idol Parfum</h3>
+                              <p>₹6800</p>
+                              <button class="btn wishlist-btn" onclick="addToWishlist('Lancome Idol Perfume', 6800, 'lip3.avif')">Add to Wishlist</button>
+                              <a href="https://www.nykaa.com/lancome-idole-eau-de-parfum/p/11234670?productId=11234670&pps=1" target="_blank"class="btn">Buy Now</a>
+                            </div>
+                            <div class="product-card">
+                              <img src="perfume3.avif" alt="perfume">
+                              <h3>Victoria    Secret  Perfume</h3>
+                              <p>₹8999</p>
+                              <button class="btn wishlist-btn" onclick="addToWishlist('Victoria Secret Perfume', 8999, 'lip3.avif')">Add to Wishlist</button>
+                              <a href="https://www.nykaa.com/victoria-s-secret-bombshell-edp/p/5229540?productId=5229540&pps=2&skuId=5229399" target="_blank" class="btn">Buy Now</a>
+                            </div>
+                            <div class="product-card">
+                              <img src="perfume 4.avif" alt="perfume">
+                              <h3>Guess    Femme    Perfume</h3>
+                              <p>₹3840</p>
+                              <button class="btn wishlist-btn" onclick="addToWishlist('Guess Femme Perfume', 3840, 'lip3.avif')">Add to Wishlist</button>
+                              <a href="https://www.nykaa.com/guess-bella-vita-eau-de-parfum/p/13913003?productId=13913003&pps=1&skuId=5288358"target="_blank" class="btn">Buy Now</a>
+                            </div>
+
+
+                    </div>
+                    <div section class="products" id="products">
+                      <div class="container">
+                        <h3>EYESHADOW RANGE</h3>
+                        <div class="product-grid">
+                  
+                    <div class="product-card">
+                      <img src="eyeshadow1.avif" alt="eyeshadow">
+                      <h3>Huda Beauty pallatte</h3>
+                      <p>₹2650</p>
+                      <button class="btn wishlist-btn" onclick="addToWishlist('Huda Beauty Pallatte', 2650, 'lip3.avif')">Add to Wishlist</button>
+                      <a href="https://www.nykaa.com/huda-beauty-creamy-obsessions-eye-shadow-palette/p/13949447?productId=13949447&pps=96&skuId=13949440" target="_blank" class="btn">Buy Now</a>
+                      </div>
+                      <div class="product-card">
+                        <img src="eyeshadow3.avif" alt="eyeshadow">
+                        <h3>Charllotte Tilbury pallatte</h3>
+                        <p>₹7500</p>
+                        <button class="btn wishlist-btn" onclick="addToWishlist('Charllotte Tilbury Perfume', 7500, 'lip3.avif')">Add to Wishlist</button>
+                        <a href="https://www.nykaa.com/charlotte-tilbury-pillow-talk-beautyverse-love-palette-xmas-2024/p/16741987?productId=16741987&pps=44" target="_blank" class="btn">Buy Now</a>
+                      </div>
+
+                        <div class="product-card">
+                          <img src="eyeshadow4.avif" alt="eye shadow">
+                          <h3>kay Beauty pallatte</h3>
+                          <p>₹1104</p>
+                          <button class="btn wishlist-btn" onclick="addToWishlist('kay Beauty pallatte', 1104, 'lip3.avif')">Add to Wishlist</button>
+                          <a href="https://www.nykaa.com/kay-beauty-eyekanvas-eyeshadow-palette/p/1324436?productId=1324436&pps=16&skuId=772946"  target="_blank"class="btn">Buy Now</a>
+                          </div>
+                          <div class="product-card">
+                            <img src="eyeshadow5.avif" alt="eye shadow">
+                            <h3>Mars pallatte</h3>
+                            <p>₹278</p>
+                            <button class="btn wishlist-btn" onclick="addToWishlist('Mars Pallatte', 278, 'lip3.avif')">Add to Wishlist</button>
+                            <a href="https://www.nykaa.com/mars-dance-with-joy-eyeshadow-palette/p/6955060?productId=6955060&pps=14" target="_blank" class="btn">Buy Now</a>
+                            </div>
+                            </div>
+                            <div section class="products" id="products">
+                              <div class="container">
+                                <h3>BLUSHES RANGE</h3>
+                                 <div class="product-grid">
+                          
+                            <div class="product-card">
+                              <img src="blush1.avif" alt="blush">
+                              <h3>Kay Beauty velvet dream blush</h3>
+                              <p>₹1199</p>
+                              <button class="btn wishlist-btn" onclick="addToWishlist('Kay Beauty velvet Dream blush', 1199, 'lip3.avif')">Add to Wishlist</button>
+                              <a href="https://www.nykaa.com/kay-beauty-velvet-dream-multi-use-blush/p/17395669?productId=17395669&pps=3&skuId=14488863" target="_blank"class="btn">Buy Now</a>
+                              </div>
+                              <div class="product-card">
+                                <img src="blush2.avif" alt="blush">
+                                <h3>M.A.C Glow Play  Cushion Blush</h3>
+                                <p>₹3800</p>
+                                <button class="btn wishlist-btn" onclick="addToWishlist('M.A.C Glow Play  Cushion Blush', 3800, 'lip3.avif')">Add to Wishlist</button>
+                                <a href="https://www.nykaa.com/m-a-c-glow-play-blush/p/15946985?productId=15946985&pps=6&skuId=15946984" target="_blank"class="btn">Buy Now</a>
+                              </div>
+        
+                                <div class="product-card">
+                                  <img src="blush3.avif" alt="blush">
+                                  <h3>Praush  Beauty Candy  Blush</h3>
+                                  <p>₹713</p>
+                                  <button class="btn wishlist-btn" onclick="addToWishlist('Praush Beauty Candy Blush', 713, 'lip3.avif')">Add to Wishlist</button>
+                              
+                                  <a href="https://www.nykaa.com/praush-sweet-cheeks-cream-blush/p/10114473?productId=10114473&pps=10&skuId=10114472"target="_blank" class="btn">Buy Now</a>
+                                  </div>
+                                  <div class="product-card">
+                                    <img src="blush4.avif" alt="blush">
+                                    <h3>Lakme Cheeck and Lip Soft Tint</h3>
+                                    <p>₹580</p>
+                                    <button class="btn wishlist-btn" onclick="addToWishlist('Lakme Cheeck and Lip Soft Tint', 580,'lip3.avif')">Add to Wishlist</button>
+                                    <a href="https://www.nykaa.com/lakme-9-to-5-weightless-matte-mousse-lip-cheek-color/p/73137?productId=73137&pps=18&skuId=73141" target="_blank" class="btn">Buy Now</a>
+                                    </div>
+                                    </div>
+                                    <div section class="products" id="products">
+                                      <div class="container">
+                                        <h3>HIGHLIGHTER RANGE</h3>
+                                         <div class="product-grid">
+                                  
+                                    <div class="product-card">
+                                      <img src="high1.avif" alt="highlighter">
+                                      <h3>Bobbi Brown Powder</h3>
+                                      <p>₹5200</p>
+                                      <button class="btn wishlist-btn" onclick="addToWishlist('Boobi Brown Powder ', 5200, 'lip3.avif')">Add to Wishlist</button>
+                                      <a href="https://www.nykaa.com/bobbi-brown-highlighting-powder/p/102069?productId=102069&pps=1&skuId=5312917"  target="_blank"class="btn">Buy Now</a>
+                                      </div>
+                                      <div class="product-card">
+                                        <img src="high2.avif" alt="highlighter">
+                                        <h3>M.A.C Molten Metal </h3>
+                                        <p>₹3800</p>
+                                        <button class="btn wishlist-btn" onclick="addToWishlist('M.A.C Molten Metal', 3800, 'lip3.avif')">Add to Wishlist</button>
+                                        <a href="https://www.nykaa.com/m-a-c-molten-metal-highlighter-joy/p/16183739?productId=16183739&pps=4"  target="_blank "class="btn">Buy Now</a>
+                                      </div>
+                
+                                        <div class="product-card">
+                                          <img src="high3.avif" alt="highlighter">
+                                          <h3>M.A.C Mineralize Skinfinish </h3>
+                                          <p>₹4000</p>
+                                          <button class="btn wishlist-btn" onclick="addToWishlist('M.A.C Mineralize Skinfinish', 4000, 'lip3.avif')">Add to Wishlist</button>
+                                          <a href="https://www.nykaa.com/m-a-c-mineralize-skinfinish/p/88777?productId=88777&pps=1&skuId=88776" target="_blank" class="btn">Buy Now</a>
+                                          </div>
+                                          <div class="product-card">
+                                            <img src="high4.avif" alt="highlighter">
+                                            <h3>ICONIC london Illimunator</h3>
+                                            <p>₹3222</p>
+                                            <button class="btn wishlist-btn" onclick="addToWishlist('Iconic london Illuminator', 3222, 'lip3.avif')">Add to Wishlist</button>
+                                            <a href="https://www.nykaa.com/iconic-london-illuminator/p/5332946?productId=5332946&pps=8&skuId=5332876" target="_blank" class="btn">Buy Now</a>
+                                            </div>
+                                            </div>
+                         </div>
+                         <div id="wishlist-modal" style="display:none;">
+                          <div class="modal-content">
+                            <h3>Your Wishlist</h3>
+                            <ul id="wishlist-items"></ul>
+                            <button class="btn" onclick="closeWishlist()">Close</button>
+                          </div>
+                        </div>
+                       
+                       
+          </main>
+          
+        </div>
+     
+      
+     
+      <footer>
+        <div class="container">
+          <div class="footer-info">
+            <div class="footer-logo">Glamify</div>
+            <p>Stay connected and follow us on social media.</p>
+          </div>
+          <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+          </div>
+          <script src="script.js"></script>
+      
+        </div>
+      </footer>
+
+    
+    
+</body>
+</html>      

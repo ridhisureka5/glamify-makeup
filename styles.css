@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+  color: black;
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 0px;
+  color: white;
+  display: flex;
+}
+
+header * {
+  color: #fad0c4 !important;
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 0;
+  font-size: 50px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  padding-top: 0px;
+}
+
+.nav-links {
+  list-style: none;
+  padding-top: 0px;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9a9e;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 150px;
+  color:black;
+  
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff9a9e;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+
+.btn:hover {
+  background-color: #fad0c4;
+}
+.product-grid{
+  display: flex;
+  justify-content: space-around;
+}
+
+.products{
+  padding: 60px 0;
+  text-align: center;
+}
+
+.products h2{
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.product-card{
+  background-color: #fad0c4;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  
+}
+.new{
+  padding-top: 120px;
+}
+
+
+
+.product-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 18px;
+  color: #ff9a9e;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 5px 0;
+}
+
+.footer-info {
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+.social-links a {
+  color: #ff9a9e;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.social-links a:hover {
+  color: #fad0c4;
+}
+.product-card {
+  transform: translateY(100px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.product-card.active {
+  opacity: 2;
+  transform: translateY(0);
+}
+/* Contact Section Styling */
+.contacts {
+  padding: 60px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  text-align: center;
+}
+
+.contacts h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  color: #333;
+}
+
+.contacts p {
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: white;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  width: 200%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ff9a9e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ff9a9e; /* Highlight color on focus */
+}
+
+.contact-form .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form .btn:hover {
+  background-color: #fad0c4;
+}
+.wishlist {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#wishlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+#wishlist-table th, #wishlist-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#wishlist-table th {
+  background-color: #ff9a9e;
+  color: white;
+}
+
+#wishlist-total {
+  font-size: 24px;
+  color: #333;
+}
+
+.remove-btn {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove-btn:hover {
+  background-color: #e60000;
+}
