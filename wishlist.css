@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 0px;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    color: black;
+    padding-bottom: 50px; /* Adds space to avoid content being covered by the footer */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 0;
+    font-size: 50px;
+  }
+  
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    padding-top: 0px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding-top: 0px;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9a9e;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed; /* Fixes the footer at the bottom */
+    bottom: 0; /* Sticks to the bottom of the viewport */
+    width: 100%; /* Ensures it spans the full width */
+    z-index: 10; /* Keeps it above other content if necessary */
+  }
+
+.footer-info {
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #ff9a9e;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+
+.wishlist {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#wishlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+#wishlist-table th, #wishlist-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#wishlist-table th {
+  background-color: #ff9a9e;
+  color: white;
+}
+
+#wishlist-total {
+  font-size: 24px;
+  color: #333;
+}
+
+.remove-btn {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove-btn:hover {
+  background-color: #e60000;
+}
